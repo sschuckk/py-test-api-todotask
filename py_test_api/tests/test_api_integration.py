@@ -72,6 +72,23 @@ def test_list_tasks():
     assert len(data['tasks']) == n
     print(data)
 
+
+def test_delete_task():
+    payload = new_task_payload()
+    # Create task
+    response = create_task(payload)
+    assert response.status_code == 200
+    task_id = response.json()['task']['task_id']
+
+    # Delete task
+    response = delete_task(task_id)
+    assert response.status_code == 200
+
+    # Get and verify task
+    response = get_task(task_id)
+    assert response.status_code == 404
+
+
 def get_task(task_id):
     return requests.get(ENDPOINT + f'/get-task/{task_id}')
 
@@ -86,6 +103,10 @@ def create_task(payload):
 
 def update_task(payload):
     return requests.put(ENDPOINT + '/update-task', json=payload)
+
+
+def delete_task(task_id):
+    return requests.delete(ENDPOINT + f'/delete-task/{task_id}')
 
 
 def new_task_payload():
