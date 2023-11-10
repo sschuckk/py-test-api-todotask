@@ -1,11 +1,12 @@
 from py_test_api.utils.api_method_helper import *
+import logging
+
+logger = logging.getLogger(__name__)
 
 
 def test_get_api():
     response = requests.get(ENDPOINT)
-    print(response)
-    data = response.json()
-    print(data)
+    assert response.status_code == 200
 
 
 def test_create_task():

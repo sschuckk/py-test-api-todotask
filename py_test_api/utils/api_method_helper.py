@@ -11,7 +11,9 @@ Functions:
 
 import requests
 import uuid
+import logging
 
+logger = logging.getLogger(__name__)
 ENDPOINT = 'https://todo.pixegami.io'
 
 
@@ -25,6 +27,7 @@ def get_task(task_id):
     Returns:
         requests.Response: The response object from the API request.
     """
+    logger.info('Starting get request')
     return requests.get(ENDPOINT + f'/get-task/{task_id}')
 
 
@@ -38,6 +41,7 @@ def list_tasks(user_id):
     Returns:
         requests.Response: The response object from the API request.
     """
+    logger.info('Starting GET request')
     return requests.get(ENDPOINT + f'/list-tasks/{user_id}')
 
 
@@ -51,6 +55,7 @@ def create_task(payload):
     Returns:
         requests.Response: The response object from the API request.
      """
+    logger.info('Starting PUT request')
     return requests.put(ENDPOINT + '/create-task', json=payload)
 
 
@@ -64,6 +69,7 @@ def update_task(payload):
     Returns:
         requests.Response: The response object from the API request.
     """
+    logger.info('Starting PUT request')
     return requests.put(ENDPOINT + '/update-task', json=payload)
 
 
@@ -77,6 +83,7 @@ def delete_task(task_id):
     Returns:
         requests.Response: The response object from the API request.
     """
+    logger.info('Starting DELETE request')
     return requests.delete(ENDPOINT + f'/delete-task/{task_id}')
 
 
