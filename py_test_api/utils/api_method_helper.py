@@ -27,7 +27,7 @@ def get_task(task_id):
     Returns:
         requests.Response: The response object from the API request.
     """
-    logger.info('Starting get request')
+    logger.info('Starting GET request')
     return requests.get(ENDPOINT + f'/get-task/{task_id}')
 
 
