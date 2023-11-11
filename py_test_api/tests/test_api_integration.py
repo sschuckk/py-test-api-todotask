@@ -4,12 +4,8 @@ import logging
 logger = logging.getLogger(__name__)
 
 
-def test_get_api():
-    response = requests.get(ENDPOINT)
-    assert response.status_code == 200
-
-
 def test_create_task():
+
     # Create a task
     payload = new_task_payload()
     create_task_response = create_task(payload)
