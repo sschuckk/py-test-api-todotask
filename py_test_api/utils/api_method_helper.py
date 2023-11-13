@@ -27,7 +27,7 @@ def get_task(task_id):
     Returns:
         requests.Response: The response object from the API request.
     """
-    logger.info('Starting GET request')
+    logger.debug('Starting GET request')
     return requests.get(ENDPOINT + f'/get-task/{task_id}')
 
 
@@ -41,7 +41,7 @@ def list_tasks(user_id):
     Returns:
         requests.Response: The response object from the API request.
     """
-    logger.info('Starting GET request')
+    logger.debug('Starting GET request')
     return requests.get(ENDPOINT + f'/list-tasks/{user_id}')
 
 
@@ -55,7 +55,7 @@ def create_task(payload):
     Returns:
         requests.Response: The response object from the API request.
      """
-    logger.info('Starting PUT request')
+    logger.debug('Starting PUT request')
     return requests.put(ENDPOINT + '/create-task', json=payload)
 
 
@@ -69,7 +69,7 @@ def update_task(payload):
     Returns:
         requests.Response: The response object from the API request.
     """
-    logger.info('Starting PUT request')
+    logger.debug('Starting PUT request')
     return requests.put(ENDPOINT + '/update-task', json=payload)
 
 
@@ -83,7 +83,7 @@ def delete_task(task_id):
     Returns:
         requests.Response: The response object from the API request.
     """
-    logger.info('Starting DELETE request')
+    logger.debug('Starting DELETE request')
     return requests.delete(ENDPOINT + f'/delete-task/{task_id}')
 
 
@@ -94,6 +94,7 @@ def new_task_payload():
     Returns:
         dict: A dictionary containing information to creating a new task.
     """
+    logger.debug('Creating a new payload')
     user_id = f"test_user_{uuid.uuid4().hex}"  # Return a string hex representation of a user_id
     content = f"test_content_{uuid.uuid4().hex}"  # Return a string hex representation of a content
     return {
