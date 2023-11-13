@@ -3,8 +3,17 @@ import requests
 from requests import RequestException
 import logging
 
-logger = logging.getLogger(__name__)
 ENDPOINT = 'https://todo.pixegami.io'
+
+# Set up the logger configuration
+logging.basicConfig(filename='./py_test_api/logs/integration_api_methods_test.log',
+                    format='%(asctime)s [%(levelname)8s] %(message)s (%(filename)s:%(funcName)s:%(lineno)s)',
+                    level=logging.DEBUG,
+                    force=True,
+                    filemode='w')  # Overwrite log file
+
+# Set logger to do the recording
+logger = logging.getLogger(__name__)
 
 
 @pytest.fixture(autouse=True, scope="module")
@@ -24,5 +33,5 @@ def verify_endpoint() -> None:
         pytest.exit('Execution Error', returncode=3)
 
     yield
-    logger.info('Exiting testing...')
+    logger.info('Finishing testing...')
     pytest.exit('Done', returncode=0)
