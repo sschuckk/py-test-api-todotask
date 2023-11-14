@@ -123,9 +123,10 @@ In your terminal go to the project folder and run:
 
 <!-- LOGS AND REPORTS -->
 ## Reports (TODO):
-```
-```
+You can find the execution logs inside the folder "py_test_api/logs." 
+They are incremental and will be stored day by day.
 
+[![Product presentation][product-exec3]]()
 
 
 <!-- CONTRIBUTING -->
@@ -166,6 +167,7 @@ Project Link: [https://github.com/your_username/repo_name](https://github.com/yo
 [product-banner]: images/REST-API.avif
 [product-exec1]: images/pytest_output_1.png
 [product-exec2]: images/pytest_output_2.png
+[product-exec3]: images/pytest_output_3.png
 [Python.com]: https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54
 [Python-url]: https://www.python.org/ 
 [Pytest.com]: https://img.shields.io/badge/PYTEST-007ACC?style=for-the-badge&logo=pytest&logoColor=orange
