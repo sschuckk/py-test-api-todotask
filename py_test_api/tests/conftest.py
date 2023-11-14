@@ -2,15 +2,14 @@ import pytest
 import requests
 from requests import RequestException
 import logging
-
+from datetime import date
 ENDPOINT = 'https://todo.pixegami.io'
 
 # Set up the logger configuration
-logging.basicConfig(filename='./py_test_api/logs/integration_api_methods_test.log',
+logging.basicConfig(filename=f'./py_test_api/logs/{date.today()}_Integration_api_methods_test.log',
                     format='%(asctime)s [%(levelname)8s] %(message)s (%(filename)s:%(funcName)s:%(lineno)s)',
                     level=logging.DEBUG,
-                    force=True,
-                    filemode='w')  # Overwrite log file
+                    force=True)
 
 # Set logger to do the recording
 logger = logging.getLogger(__name__)
