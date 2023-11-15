@@ -1,9 +1,11 @@
 from py_test_api.utils.api_method_helper import *
 import logging
+import allure
 
 logger = logging.getLogger(__name__)
 
 
+@allure.testcase('ITC-001')
 def test_create_task():
     """
     This test case checks whether the create_task function successfully creates a task by sending a new task payload.
@@ -24,6 +26,7 @@ def test_create_task():
     assert data['content'] == payload["content"]
 
 
+@allure.testcase('ITC-002')
 def test_update_task():
     """
     This test case checks whether the update_task function successfully updates the details of an existing task.
@@ -47,7 +50,7 @@ def test_update_task():
 
     # Get and verify the changes
     get_task_response = get_task(task_id)
-    assert get_task_response.status_code == 200
+    assert get_task_response.status_code == 201
     data = get_task_response.json()
     assert data['task_id'] == updated_task_payload['task_id']
     assert data['user_id'] == updated_task_payload['user_id']
@@ -55,6 +58,7 @@ def test_update_task():
     assert data['is_done'] == updated_task_payload['is_done']
 
 
+@allure.testcase('ITC-003')
 def test_list_tasks():
     """
     This test case checks whether the list_tasks function successfully retrieves a list of tasks for a given user_id.
@@ -75,6 +79,7 @@ def test_list_tasks():
     assert len(data['tasks']) == n
 
 
+@allure.testcase('ITC-004')
 def test_delete_task():
     """
     This test case verifies whether the delete_task function successfully removes a task by creating a task,

@@ -1,3 +1,4 @@
+import allure
 import pytest
 import requests
 from requests import RequestException
@@ -15,6 +16,7 @@ logging.basicConfig(filename=f'./py_test_api/logs/{date.today()}_Integration_api
 logger = logging.getLogger(__name__)
 
 
+@allure.title('Preparing for the test')
 @pytest.fixture(autouse=True, scope="module")
 def verify_endpoint() -> None:
     """
