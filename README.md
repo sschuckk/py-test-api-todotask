@@ -30,7 +30,7 @@
       </ul>
     </li>
     <li><a href="#usage">Usage</a></li>
-    <li><a href="#reports">Reports</a></li>
+    <li><a href="#reports">Logs and Reports</a></li>
     <li><a href="#contributing">Contributing</a></li>
     <li><a href="#license">License</a></li>
   </ol>
@@ -40,16 +40,15 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-The objective of this project is to develop an Integration Test suite for a REST API using Pytest 
-and Requests libraries, with the goal of establishing a simple testing framework.
+The objective of this project is to develop an Integration Test Suite for a REST API application 
+using the Pytest and Requests libraries, with the goal of establishing a simple testing framework with logs and reports.
 
-But why doing this with python? 
+But why do this with Python? 
 * Rich functionality
 * Clear documentation
+* Cleaner tests
+* Scalable
 * It's FREE!
-    * Rich functionality
-    * Clear documentation
-    * It's FREE
 
 
 
@@ -85,6 +84,8 @@ To use the Script:
 * Pip: https://pip.pypa.io/en/stable/installation/
 * Git: https://git-scm.com/downloads
 
+To access the Reports
+* Allure: https://allurereport.org/docs/gettingstarted-installation/
 
 ### Installation
 
@@ -104,30 +105,60 @@ To use the Script:
 The project can be run by a terminal or directly in your IDE.
 
 In your terminal go to the project folder and run:
+
 1. For a simples execution:
    ```sh
    pytest -v
    ```
    [![Product presentation][product-exec1]]()
 
-2. To show the logs on terminal:
+
+2. To enable and show the logs on terminal:
    ```sh
    pytest -v --log-cli-level=INFO
    ```
    [![Product presentation][product-exec2]]()
-   >_Logs options: DEBUG, INFO, WARN, ERROR, and Critical._
+   _Logs options: DEBUG, INFO, WARN, ERROR, and Critical._
+
+
+3. To execute with reports by allure plugin:
+   ```sh
+   pytest -v --alluredir=py_test_api/reports
+   ```
+   To show the reports:
+   ```sh
+   allure serve py_test_api/reports
+   ```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
 
 <!-- LOGS AND REPORTS -->
-## Reports (TODO):
-You can find the execution logs inside the folder "py_test_api/logs." 
-They are incremental and will be stored day by day.
+## Logs and Reports:
+
+The test Log and Reports serves to offer a historical record of the testing process which can be used by the testing, 
+development, product team, and other stakeholders.
+
+#### Logs:
+Each execution of this framework will generate a log that will be stored inside the folder 'py_test_api/logs'. 
+
+They are incremental and will be stored day by day:
 
 [![Product presentation][product-exec3]]()
 
+#### Reports:
+This framework supports the Allure plugin which has everything you need to create, customize, and understand your test reports.
+
+The reports can be stored and accessed inside the folder 'py_test_api/reports.'
+
+Example of a report after simulating a fail result:
+
+[![Product presentation][product-reports1]]()
+[![Product presentation][product-reports2]]()
+> Go to <a href="#usage">Usage</a> topic to learn how to execute and display the tests with reports.
+ 
+ 
 
 <!-- CONTRIBUTING -->
 ## Contributing
@@ -168,6 +199,8 @@ Project Link: [https://github.com/your_username/repo_name](https://github.com/yo
 [product-exec1]: images/pytest_output_1.png
 [product-exec2]: images/pytest_output_2.png
 [product-exec3]: images/pytest_output_3.png
+[product-reports1]: images/pytest_reports_1.png
+[product-reports2]: images/pytest_reports_2.png
 [Python.com]: https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54
 [Python-url]: https://www.python.org/ 
 [Pytest.com]: https://img.shields.io/badge/PYTEST-007ACC?style=for-the-badge&logo=pytest&logoColor=orange
