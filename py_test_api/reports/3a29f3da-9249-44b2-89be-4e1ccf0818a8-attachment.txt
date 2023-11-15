@@ -1,0 +1,34 @@
+[35mDEBUG   [0m py_test_api.utils.api_method_helper:api_method_helper.py:105 Creating a new payload [user_id: test_user_36f6ebfbcf99413f829f95256d246eb9, content: test_content_0feb72f8c16a4808812ec8e738d88da6]
+[35mDEBUG   [0m py_test_api.utils.api_method_helper:api_method_helper.py:61 Starting PUT request [payload: {'content': 'test_content_0feb72f8c16a4808812ec8e738d88da6', 'user_id': 'test_user_36f6ebfbcf99413f829f95256d246eb9', 'is_done': False}]
+[35mDEBUG   [0m urllib3.connectionpool:connectionpool.py:1053 Starting new HTTPS connection (1): todo.pixegami.io:443
+[35mDEBUG   [0m urllib3.connectionpool:connectionpool.py:547 https://todo.pixegami.io:443 "PUT /create-task HTTP/1.1" 200 232
+[35mDEBUG   [0m py_test_api.utils.api_method_helper:api_method_helper.py:61 Starting PUT request [payload: {'content': 'test_content_0feb72f8c16a4808812ec8e738d88da6', 'user_id': 'test_user_36f6ebfbcf99413f829f95256d246eb9', 'is_done': False}]
+[35mDEBUG   [0m urllib3.connectionpool:connectionpool.py:1053 Starting new HTTPS connection (1): todo.pixegami.io:443
+[35mDEBUG   [0m urllib3.connectionpool:connectionpool.py:547 https://todo.pixegami.io:443 "PUT /create-task HTTP/1.1" 200 232
+[35mDEBUG   [0m py_test_api.utils.api_method_helper:api_method_helper.py:61 Starting PUT request [payload: {'content': 'test_content_0feb72f8c16a4808812ec8e738d88da6', 'user_id': 'test_user_36f6ebfbcf99413f829f95256d246eb9', 'is_done': False}]
+[35mDEBUG   [0m urllib3.connectionpool:connectionpool.py:1053 Starting new HTTPS connection (1): todo.pixegami.io:443
+[35mDEBUG   [0m urllib3.connectionpool:connectionpool.py:547 https://todo.pixegami.io:443 "PUT /create-task HTTP/1.1" 200 232
+[35mDEBUG   [0m py_test_api.utils.api_method_helper:api_method_helper.py:61 Starting PUT request [payload: {'content': 'test_content_0feb72f8c16a4808812ec8e738d88da6', 'user_id': 'test_user_36f6ebfbcf99413f829f95256d246eb9', 'is_done': False}]
+[35mDEBUG   [0m urllib3.connectionpool:connectionpool.py:1053 Starting new HTTPS connection (1): todo.pixegami.io:443
+[35mDEBUG   [0m urllib3.connectionpool:connectionpool.py:547 https://todo.pixegami.io:443 "PUT /create-task HTTP/1.1" 200 232
+[35mDEBUG   [0m py_test_api.utils.api_method_helper:api_method_helper.py:61 Starting PUT request [payload: {'content': 'test_content_0feb72f8c16a4808812ec8e738d88da6', 'user_id': 'test_user_36f6ebfbcf99413f829f95256d246eb9', 'is_done': False}]
+[35mDEBUG   [0m urllib3.connectionpool:connectionpool.py:1053 Starting new HTTPS connection (1): todo.pixegami.io:443
+[35mDEBUG   [0m urllib3.connectionpool:connectionpool.py:547 https://todo.pixegami.io:443 "PUT /create-task HTTP/1.1" 200 232
+[35mDEBUG   [0m py_test_api.utils.api_method_helper:api_method_helper.py:61 Starting PUT request [payload: {'content': 'test_content_0feb72f8c16a4808812ec8e738d88da6', 'user_id': 'test_user_36f6ebfbcf99413f829f95256d246eb9', 'is_done': False}]
+[35mDEBUG   [0m urllib3.connectionpool:connectionpool.py:1053 Starting new HTTPS connection (1): todo.pixegami.io:443
+[35mDEBUG   [0m urllib3.connectionpool:connectionpool.py:547 https://todo.pixegami.io:443 "PUT /create-task HTTP/1.1" 200 232
+[35mDEBUG   [0m py_test_api.utils.api_method_helper:api_method_helper.py:61 Starting PUT request [payload: {'content': 'test_content_0feb72f8c16a4808812ec8e738d88da6', 'user_id': 'test_user_36f6ebfbcf99413f829f95256d246eb9', 'is_done': False}]
+[35mDEBUG   [0m urllib3.connectionpool:connectionpool.py:1053 Starting new HTTPS connection (1): todo.pixegami.io:443
+[35mDEBUG   [0m urllib3.connectionpool:connectionpool.py:547 https://todo.pixegami.io:443 "PUT /create-task HTTP/1.1" 200 232
+[35mDEBUG   [0m py_test_api.utils.api_method_helper:api_method_helper.py:61 Starting PUT request [payload: {'content': 'test_content_0feb72f8c16a4808812ec8e738d88da6', 'user_id': 'test_user_36f6ebfbcf99413f829f95256d246eb9', 'is_done': False}]
+[35mDEBUG   [0m urllib3.connectionpool:connectionpool.py:1053 Starting new HTTPS connection (1): todo.pixegami.io:443
+[35mDEBUG   [0m urllib3.connectionpool:connectionpool.py:547 https://todo.pixegami.io:443 "PUT /create-task HTTP/1.1" 200 232
+[35mDEBUG   [0m py_test_api.utils.api_method_helper:api_method_helper.py:61 Starting PUT request [payload: {'content': 'test_content_0feb72f8c16a4808812ec8e738d88da6', 'user_id': 'test_user_36f6ebfbcf99413f829f95256d246eb9', 'is_done': False}]
+[35mDEBUG   [0m urllib3.connectionpool:connectionpool.py:1053 Starting new HTTPS connection (1): todo.pixegami.io:443
+[35mDEBUG   [0m urllib3.connectionpool:connectionpool.py:547 https://todo.pixegami.io:443 "PUT /create-task HTTP/1.1" 200 232
+[35mDEBUG   [0m py_test_api.utils.api_method_helper:api_method_helper.py:61 Starting PUT request [payload: {'content': 'test_content_0feb72f8c16a4808812ec8e738d88da6', 'user_id': 'test_user_36f6ebfbcf99413f829f95256d246eb9', 'is_done': False}]
+[35mDEBUG   [0m urllib3.connectionpool:connectionpool.py:1053 Starting new HTTPS connection (1): todo.pixegami.io:443
+[35mDEBUG   [0m urllib3.connectionpool:connectionpool.py:547 https://todo.pixegami.io:443 "PUT /create-task HTTP/1.1" 200 232
+[35mDEBUG   [0m py_test_api.utils.api_method_helper:api_method_helper.py:46 Starting GET request [user_id: test_user_36f6ebfbcf99413f829f95256d246eb9]
+[35mDEBUG   [0m urllib3.connectionpool:connectionpool.py:1053 Starting new HTTPS connection (1): todo.pixegami.io:443
+[35mDEBUG   [0m urllib3.connectionpool:connectionpool.py:547 https://todo.pixegami.io:443 "GET /list-tasks/test_user_36f6ebfbcf99413f829f95256d246eb9 HTTP/1.1" 200 2251

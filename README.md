@@ -79,13 +79,13 @@ Documentation: https://todo.pixegami.io/docs
 ## Getting Started
 
 ### Prerequisites
-To use the Script:
-* Python: https://www.python.org/downloads/
-* Pip: https://pip.pypa.io/en/stable/installation/
-* Git: https://git-scm.com/downloads
+* To use the Script:
+  * Python: https://www.python.org/downloads/
+  * Pip: https://pip.pypa.io/en/stable/installation/
+  * Git: https://git-scm.com/downloads
 
-To access the Reports
-* Allure: https://allurereport.org/docs/gettingstarted-installation/
+* To access the Reports
+  * Allure: https://allurereport.org/docs/gettingstarted-installation/
 
 ### Installation
 
@@ -93,7 +93,7 @@ To access the Reports
    ```sh
    git clone https://github.com/sschuckk/py-test-api-todotask
    ```
-2. Install the packages according to the configuration file requirements.txt.
+2. Install the packages according to the configuration file 'requirements.txt'.
    ```sh
    pip install -r requirements.txt
    ```
@@ -121,7 +121,7 @@ In your terminal go to the project folder and run:
    _Logs options: DEBUG, INFO, WARN, ERROR, and Critical._
 
 
-3. To execute with reports by allure plugin:
+3. To execute with reports by Allure plugin:
    ```sh
    pytest -v --alluredir=py_test_api/reports
    ```
@@ -199,6 +199,7 @@ Project Link: [https://github.com/your_username/repo_name](https://github.com/yo
 [product-exec1]: images/pytest_output_1.png
 [product-exec2]: images/pytest_output_2.png
 [product-exec3]: images/pytest_output_3.png
+
 [product-reports1]: images/pytest_reports_1.png
 [product-reports2]: images/pytest_reports_2.png
 [Python.com]: https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54
