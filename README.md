@@ -41,7 +41,11 @@
 ## About The Project
 
 The objective of this project is to develop an Integration Test Suite for a REST API application 
-using the Pytest and Requests libraries, with the goal of establishing a simple testing framework with logs and reports.
+using the Pytest and Requests libraries from Python, with the goal of establishing a simple testing framework with logs and reports.
+
+REST API testing frameworks help ensure the functionality, reliability, security, and performance of the APIs. 
+This framework includes functionalities for initiating HTTP requests, validating responses, and conducting 
+ functional testing.  
 
 But why do this with Python? 
 * Rich functionality
