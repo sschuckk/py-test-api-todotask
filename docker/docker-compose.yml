@@ -1,0 +1,16 @@
+name: py_test_api
+
+services:
+  tester:
+    build:
+      context: ../
+      dockerfile: ./docker/Dockerfile
+    volumes:
+        - reports:/framework/py_test_api/reports
+    command: >
+      sh -c "cd framework
+      && pytest -v --alluredir=py_test_api/reports
+      && tail -F anything"
+
+volumes:
+  reports:
