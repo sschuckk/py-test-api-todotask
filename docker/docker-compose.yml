@@ -5,12 +5,16 @@ services:
     build:
       context: ../
       dockerfile: ./docker/Dockerfile
+
+    # set a volume to store the reports
     volumes:
-        - reports:/framework/py_test_api/reports
+        - reports:/py_test_api/reports
+
+    # run pytest with allure package and keep the container running
     command: >
-      sh -c "cd framework
-      && pytest -v --alluredir=py_test_api/reports
+      sh -c "pytest -v --alluredir=py_test_api/reports
       && tail -F anything"
 
 volumes:
   reports:
+

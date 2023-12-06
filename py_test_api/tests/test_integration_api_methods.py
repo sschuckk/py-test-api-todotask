@@ -50,7 +50,7 @@ def test_update_task():
 
     # Get and verify the changes
     get_task_response = get_task(task_id)
-    assert get_task_response.status_code == 201
+    assert get_task_response.status_code == 200
     data = get_task_response.json()
     assert data['task_id'] == updated_task_payload['task_id']
     assert data['user_id'] == updated_task_payload['user_id']
